@@ -1,259 +1,318 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mishara Dharmarathna — Portfolio</title>
-  <meta name="description" content="Front-end developer portfolio of Mishara Dharmarathna: React, JS, HTML/CSS, manual QA testing, and selected projects." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mishara Dharmarathna — Front-End Developer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Front-end developer skilled in React, JavaScript, and modern CSS — building smooth, accessible interfaces and animations." />
+  <meta name="author" content="Mishara Dharmarathna" />
+  <meta property="og:title" content="Mishara Dharmarathna — Front-End Developer" />
+  <meta property="og:description" content="React | JavaScript | CSS | Responsive Design | Manual QA" />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="dark light" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Progress bar -->
-  <div class="progress" aria-hidden="true"></div>
+  <div class="progress"></div>
 
-  <!-- Skip link -->
-  <a class="skip" href="#about">Skip to content</a>
+ <!-- Navbar -->
+<header class="navbar">
+  <div class="nav-container">
+    <!-- Brand -->
+    <a href="#home" class="brand">
+      <span class="brand-highlight">Mishara</span> Dharmarathna
+    </a>
 
-  <!-- NAV -->
-  <header class="navwrap">
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="Go to home">
-        <img src="images/logo.png" alt="Logo" />
-        <span>Mishara <span class="muted">Dharmarathna</span></span>
-      </a>
-      <div class="spacer"></div>
-      <button class="burger" id="burger" aria-label="Toggle menu"><i class="bi bi-list"></i></button>
-      <nav class="links" id="links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <i class="bi bi-brightness-high"></i><span class="muted">Theme</span>
+    <!-- Navigation Links -->
+    <nav id="navLinks" class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Actions -->
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
+      <button id="burger" class="icon-btn burger" aria-label="Menu">
+        <i class="bi bi-list"></i>
       </button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- HERO -->
+
+  <!-- Hero -->
   <section id="home" class="hero">
-    <div class="orb one"></div>
-    <div class="orb two"></div>
-    <div class="container hero-inner">
-      <div class="content reveal">
-        <div class="hero-badges">
-          <span class="tag"><i class="bi bi-code-slash"></i> Front-End Developer</span>
-          <span class="open-badge"><i class="bi bi-briefcase-fill"></i> Open to Internship</span>
-        </div>
-        <h1 class="name">Mishara Dharmarathna</h1>
-        <p class="lead">
-          I build clean, responsive, and accessible interfaces with
-          <strong>React</strong>, <strong>JavaScript</strong>, and <strong>HTML/CSS</strong>.
-          I also practice manual <strong>QA testing</strong> and write clear bug reports.
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <img src="images/profile-photo.png" alt="Mishara Dharmarathna" class="hero-photo" />
+      <h1 class="hero-title">
+        I craft <span class="gradient-text">beautiful & interactive</span> web experiences
+      </h1>
+      <p class="hero-sub">Front-end developer focused on <strong>React</strong>, <strong>JavaScript</strong>, and <strong>modern CSS</strong>.</p>
+      <div class="hero-buttons">
+        <a href="Documents/MisharaCV.pdf" target="_blank" class="btn btn-primary"><i class="bi bi-download"></i> Download CV</a>
+        <a href="#projects" class="btn btn-outline"><i class="bi bi-grid"></i> View Projects</a>
+      </div>
+    </div>
+  </section>
+
+<!-- About -->
+<section id="about" class="section about-clean">
+  <div class="about-container reveal-stagger">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-intro">
+      I’m a <strong>Software Engineering student</strong> passionate about building
+      modern, accessible, and high-performance web applications that deliver delightful user experiences.
+    </p>
+
+    <div class="about-cards">
+      <div class="about-card">
+        <div class="card-icon"><i class="bi bi-person-workspace"></i></div>
+        <h3>Summary</h3>
+        <p>
+          Motivated and detail-oriented front-end developer with a passion for clean, responsive, and creative UI design.
+          Dedicated to writing maintainable code and ensuring accessibility.
         </p>
-        <div class="hero-cta">
-          <a class="btn-brand" href="Documents/Mishara CV.pdf" target="_blank" rel="noopener">Download CV</a>
-          <a class="ghost" href="#projects"><i class="bi bi-grid"></i> View Projects</a>
-        </div>
-        <p class="muted mt-8">Focus: UI Development · Testing · Basic Business Analysis</p>
       </div>
-      <div class="visual reveal">
-        <div class="avatar tilt" aria-label="Profile photo"
-             style="--avatar-url:url('images/profile-photo.png')"></div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="shell reveal">
-        <div class="about-head">
-          <h2 class="title">About Me</h2>
-          <span class="open-badge"><i class="bi bi-briefcase-fill"></i> Open to Internship</span>
-        </div>
-        <p class="subtitle">
-          Detail-oriented and motivated software engineering student with hands-on experience in web development
-          and manual QA testing. Adept at teamwork and delivering high-quality, user-friendly solutions.
-        </p>
-        <div class="row">
-          <div class="col">
-            <h3 class="h3">What I do</h3>
-            <ul class="muted list">
-              <li>Convert Figma ideas into reusable React components</li>
-              <li>Responsive layouts, state with hooks, and clean routing</li>
-              <li>Test plans, exploratory/manual testing, issue reporting</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3 class="h3">Contact</h3>
-            <p><a class="ghost" href="mailto:mdehemini@gmail.com"><i class="bi bi-envelope"></i> mdehemini@gmail.com</a></p>
-            <p><a class="ghost" href="tel:+94774995670"><i class="bi bi-telephone"></i> +94 77 499 5670</a></p>
-            <div class="social">
-              <a class="ghost" href="https://github.com/Dahamini2003" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-              <a class="ghost" href="https://www.linkedin.com/in/mishara-dharmarathna" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
-            </div>
-          </div>
-        </div>
+      <div class="about-card">
+        <div class="card-icon"><i class="bi bi-layers"></i></div>
+        <h3>What I Do</h3>
+        <ul>
+          <li><i class="bi bi-check2-circle"></i> Build responsive React interfaces</li>
+          <li><i class="bi bi-check2-circle"></i> Create modern CSS animations & layouts</li>
+          <li><i class="bi bi-check2-circle"></i> Conduct manual QA & usability testing</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="title reveal">Skills</h2>
-      <p class="subtitle reveal">Core stack and tools I use regularly.</p>
+<!-- Skills -->
+<section id="skills" class="section skills-modern">
+  <div class="skills-container reveal-stagger">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-desc">
+      A combination of design, development, and testing tools I use to craft modern web experiences.
+    </p>
 
-      <div class="skills">
-        <div class="skill reveal" data-pct="90">
-          <div class="top"><i class="bi bi-filetype-html"></i><strong>HTML5</strong></div>
-          <div class="bar-wrap"><div class="bar"></div></div>
-          <div class="chips"><span class="chip">Semantic</span><span class="chip">A11y</span></div>
-        </div>
-
-        <div class="skill reveal" data-pct="86">
-          <div class="top"><i class="bi bi-filetype-css"></i><strong>CSS3</strong></div>
-          <div class="bar-wrap"><div class="bar"></div></div>
-          <div class="chips"><span class="chip">Flex/Grid</span><span class="chip">Animations</span></div>
-        </div>
-
-        <div class="skill reveal" data-pct="78">
-          <div class="top"><i class="bi bi-filetype-js"></i><strong>JavaScript</strong></div>
-          <div class="bar-wrap"><div class="bar"></div></div>
-          <div class="chips"><span class="chip">ES6+</span><span class="chip">Fetch/DOM</span></div>
-        </div>
-
-        <div class="skill reveal" data-pct="72">
-          <div class="top"><i class="bi bi-react"></i><strong>React</strong></div>
-          <div class="bar-wrap"><div class="bar"></div></div>
-          <div class="chips"><span class="chip">Hooks</span><span class="chip">Router</span></div>
-        </div>
-
-        <div class="skill reveal" data-pct="75">
-          <div class="top"><i class="bi bi-git"></i><strong>Git/GitHub</strong></div>
-          <div class="bar-wrap"><div class="bar"></div></div>
-          <div class="chips"><span class="chip">Branches</span><span class="chip">PRs</span></div>
-        </div>
-
-        <div class="skill reveal" data-pct="70">
-          <div class="top"><i class="bi bi-bug-fill"></i><strong>Manual Testing</strong></div>
-          <div class="bar-wrap"><div class="bar"></div></div>
-          <div class="chips"><span class="chip">Test Cases</span><span class="chip">Bug Reports</span></div>
-        </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="icon-wrap"><i class="bi bi-filetype-html"></i></div>
+        <h3>HTML5</h3>
+        <p>Semantic, accessible markup for structured web content.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="title reveal">Featured Projects</h2>
-      <p class="subtitle reveal">A few things I’ve built and tested.</p>
+      <div class="skill-card">
+        <div class="icon-wrap"><i class="bi bi-filetype-css"></i></div>
+        <h3>CSS3</h3>
+        <p>Modern layouts, responsive design, and smooth animations.</p>
+      </div>
 
+      <div class="skill-card">
+        <div class="icon-wrap"><i class="bi bi-filetype-js"></i></div>
+        <h3>JavaScript</h3>
+        <p>Dynamic functionality and logic for interactive UI behavior.</p>
+      </div>
+
+      <div class="skill-card">
+  <div class="icon-wrap react-icon">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+  </div>
+  <h3>React</h3>
+  <p>Component-based UIs with reusable logic and fast rendering.</p>
+</div>
+
+      <div class="skill-card">
+        <div class="icon-wrap"><i class="bi bi-bootstrap-fill"></i></div>
+        <h3>Bootstrap</h3>
+        <p>Responsive design framework for rapid UI development.</p>
+      </div>
       
-      <div class="grid">
- <article class="project tilt reveal">
-          <div class="thumb" style="background-image:url('images/mr.look.png')"></div>
-          <div class="body">
-            <span class="badge"><i class="bi bi-camera"></i> Mr.Look Weddings</span>
-            <p class="muted mt-10">Photography portfolio with lightbox galleries and simple CMS flow.</p>
-            <div class="links">
-              <a class="ghost" href="https://www.mrlookwedding.com/wedding-photography-srilanka-colombo" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live</a>
-              <a class="ghost" href="https://github.com/Dahamini2003/Mr.Look_Photography_Website" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
-            </div>
-          </div>
-        </article>
+      <div class="skill-card">
+        <div class="icon-wrap"><i class="bi bi-git"></i></div>
+        <h3>Git / GitHub</h3>
+        <p>Version control and collaboration on large projects.</p>
+      </div>
 
-          
-        <article class="project tilt reveal">
-          <div class="thumb" style="background-image:url('images/menty.png')"></div>
-          <div class="body">
-            <span class="badge"><i class="bi bi-window"></i> Menty Tours</span>
-            <p class="muted mt-10">React tourism website with mobile-first UI and clean components.</p>
-            <div class="links">
-              <a class="ghost" href="https://www.mentytours.com" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live</a>
-              <a class="ghost" href="https://github.com/Dahamini2003/menty-tours" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project tilt reveal">
-          <div class="thumb" style="background-image:url('images/brightkennel.png')"></div>
-          <div class="body">
-            <span class="badge"><i class="bi bi-heart"></i> Bright Kennel</span>
-            <p class="muted mt-10">Pet-care site with galleries, reviews, and smooth page transitions.</p>
-            <div class="links">
-              <a class="ghost" href="https://github.com/Dahamini2003/bright-kennel" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
-            </div>
-          </div>
-        </article>
+      <div class="skill-card">
+        <div class="icon-wrap"><i class="bi bi-bug-fill"></i></div>
+        <h3>Manual Testing</h3>
+        <p>Functional and usability testing to ensure software quality.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2 class="title reveal">Education</h2>
-      <div class="timeline">
-        <div class="edu reveal">
-          <h4>BSc (Hons) in Software Engineering</h4>
-          <div class="meta">ICBT — Expected start: October 2025</div>
-        </div>
-         <div class="edu reveal">
-          <h4>Higher Diploma in Computing & Software Engineering <span class="muted">(Completed – Pending Results)</span></h4>
-          <div class="meta">International College of Business and Technology (ICBT) — 2023–2025</div>
-        </div>
-        <div class="edu reveal">
-          <h4>Certificate Course in Web Design</h4>
-          <div class="meta">University of Moratuwa (CODL) — 2022</div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Projects -->
+<section id="projects" class="section projects-showcase">
+  <h2 class="section-title reveal">My Recent Projects</h2>
+  <p class="section-desc reveal">
+    A glimpse into the work I’ve crafted — blending clean code, smooth design, and delightful user experiences.
+  </p>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="shell reveal">
-        <h2 class="title">Let’s work together</h2>
-        <p class="subtitle">Have a project, an internship, or a question? Send a message—I'll reply soon.</p>
-        <div class="row">
-          <div class="col">
-            <form onsubmit="return sendMail(event)">
-              <input type="text" id="name" name="name" placeholder="Your name" required>
-              <input type="email" id="email" name="email" placeholder="Your email" required>
-              <textarea id="message" name="message" placeholder="Your message" required></textarea>
-              <button class="btn-brand" type="submit">Send message</button>
-            </form>
-            <p class="muted mt-8"><i class="bi bi-shield-check"></i> This form uses your default email app.</p>
-          </div>
-          <div class="col">
-            <div class="shell dashed">
-              <h3 class="h3">Find me online</h3>
-              <p><a class="ghost" href="https://github.com/Dahamini2003" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a></p>
-              <p><a class="ghost" href="https://www.linkedin.com/in/mishara-dharmarathna" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a></p>
-              <p><a class="ghost" href="tel:+94774995670"><i class="bi bi-telephone"></i> +94 77 499 5670</a></p>
-              <p><a class="ghost" href="mailto:mdehemini@gmail.com"><i class="bi bi-envelope"></i> mdehemini@gmail.com</a></p>
-            </div>
+  <div class="showcase-grid reveal-stagger">
+    <!-- Project 1: MrLook Weddings -->
+    <div class="showcase-card" data-tilt>
+      <div class="showcase-inner">
+        <img src="images/mr.look.png" alt="MrLook Weddings" class="showcase-img" />
+        <div class="showcase-content">
+          <h3>MrLook Weddings</h3>
+          <p>
+            A cinematic wedding photography portfolio website featuring elegant image galleries,
+            smooth transitions, and a modern booking experience.
+          </p>
+          <div class="btn-group">
+            <a href="https://mrlookwedding.com" target="_blank" class="btn btn-outline small">
+              <i class="bi bi-box-arrow-up-right"></i> Visit Site
+            </a>
+            <a href="https://github.com/Dahamini2003/Mr.Look_Photography_Website" target="_blank" class="btn btn-solid small">
+              <i class="bi bi-github"></i> View Code
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <footer>© <span id="year"></span> Mishara Dharmarathna. Built with semantic HTML, modern CSS, and a sprinkle of JS.</footer>
+    <!-- Project 2: Menty Tours -->
+    <div class="showcase-card" data-tilt>
+      <div class="showcase-inner">
+        <img src="images/menty.png" alt="Menty Tours" class="showcase-img" />
+        <div class="showcase-content">
+          <h3>Menty Tours</h3>
+          <p>
+            A React-based tourism platform showcasing Sri Lankan destinations, tour packages, and animated quote forms
+            with a vibrant modern UI.
+          </p>
+          <div class="btn-group">
+            <a href="https://mentytours.com" target="_blank" class="btn btn-outline small">
+              <i class="bi bi-box-arrow-up-right"></i> Visit Site
+            </a>
+            <a href="https://github.com/Dahamini2003" target="_blank" class="btn btn-solid small">
+              <i class="bi bi-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Bright Kennel -->
+    <div class="showcase-card" data-tilt>
+      <div class="showcase-inner">
+        <img src="images/brightkennel.png" alt="Bright Kennel" class="showcase-img" />
+        <div class="showcase-content">
+          <h3>Bright Kennel</h3>
+          <p>
+            A pet-care platform offering grooming, veterinary services, and customer reviews —
+            built with React and focused on enhancing user experience.
+          </p>
+          <div class="btn-group">
+            <a href="https://github.com/Dahamini2003" target="_blank" class="btn btn-solid small">
+              <i class="bi bi-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Education -->
+<section id="education" class="section education-modern">
+  <h2 class="section-title reveal">Education</h2>
+  <p class="section-desc reveal">My academic journey and qualifications</p>
+
+  <div class="edu-timeline reveal-stagger">
+    <div class="edu-item">
+      <div class="edu-marker"></div>
+      <div class="edu-content">
+        <h3>BSc (Hons) in Software Engineering</h3>
+        <span class="edu-place">ICBT Campus — Expected 2025</span>
+        <p>Focused on software architecture, full-stack development, and professional engineering practices.</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-marker"></div>
+      <div class="edu-content">
+        <h3>Higher Diploma in Computing</h3>
+        <span class="edu-place">ICBT Campus — 2023 – 2025</span>
+        <p>Covered data structures, databases, and object-oriented programming with real-world projects.</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-marker"></div>
+      <div class="edu-content">
+        <h3>Web Design Certificate</h3>
+        <span class="edu-place">University of Moratuwa — 2022</span>
+        <p>Learned modern web design principles, responsive layouts, and front-end best practices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Contact -->
+<section id="contact" class="section contact-modern">
+  <h2 class="section-title reveal">Let’s Connect</h2>
+  <p class="section-desc reveal">Have a project, collaboration, or internship? I’d love to hear from you!</p>
+
+  <div class="contact-wrapper reveal-stagger">
+    <!-- Left info -->
+    <div class="contact-info">
+      <h3><i class="bi bi-chat-square-text-fill"></i> Get In Touch</h3>
+      <p>I’m always open to discussing new ideas, opportunities, or partnerships. Let’s create something impactful together.</p>
+
+      <ul class="contact-list">
+        <li><i class="bi bi-geo-alt"></i> Borelasgamuwa, Sri Lanka</li>
+        <li><i class="bi bi-envelope"></i> <a href="mailto:mdehemini@gmail.com">mdehemini@gmail.com</a></li>
+        <li><i class="bi bi-telephone"></i> <a href="tel:+94774995670">+94 77 499 5670</a></li>
+      </ul>
+
+      <div class="social-links">
+        <a href="https://github.com/Dahamini2003" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/mishara-dharmarathna" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Right form -->
+    <form class="contact-form">
+      <div class="form-group">
+        <input type="text" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <i class="bi bi-send"></i> Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+
+  <button id="toTop" class="to-top"><i class="bi bi-arrow-up"></i></button>
+  <footer>© <span id="year"></span> Mishara Dharmarathna</footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
